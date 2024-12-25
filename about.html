@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Get the icon on chrome tab -->
+    <link rel="icon" type="image/png" href="./imgs/logo_48.png" />
+
+    <!-- Embed Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS stylesheets  -->
+    <link rel="stylesheet" href="./css/css_reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+
+    <!-- JS scripts  -->
+    <script type="module" src="./js/script.js" defer></script>
+    <script type="module" src="./js/generalFeature.js" defer></script>
+
+    <title>Sports In Brazil</title>
+  </head>
+
+  <body>
+    <div id="gridcontainer">
+      <nav>
+        <header>
+          <img src="./imgs/logo_48.png" alt="Logo of Sports in Brazil" />
+          <h1>
+            <a
+              href="./index.html"
+              aria-label="Go to the homepage of Sports in Brazil"
+              >Sports in Brazil</a
+            >
+          </h1>
+        </header>
+
+        <div id="flexnavbar">
+          <a href="./about.html" aria-label="Learn about sports in Brazil"
+            >About</a
+          >
+          <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+            >Pubs</a
+          >
+          <a
+            href="./player.html"
+            aria-label="View famous Brazilian sports players"
+            >Players</a
+          >
+          <a href="./connect.html" aria-label="Connect with others in Brazil"
+            >Connect</a
+          >
+          <a href="./help.html" aria-label="Access the help page">Help</a>
+          <div
+            class="ham_menu"
+            aria-label="Toggle navigation menu"
+            role="button"
+            tabindex="0"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="off_screen_menu" id="offScreenMenu" aria-hidden="true">
+          <ul>
+            <li class="ham_menu_a">
+              <a href="./about.html" aria-label="Learn about sports in Brazil"
+                >About</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+                >Pubs</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./player.html"
+                aria-label="View famous Brazilian sports players"
+                >Players</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./connect.html"
+                aria-label="Connect with others in Brazil"
+                >Connect</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./help.html" aria-label="Access the help page">Help</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <h3>Welcome to Vibrant Brazil!</h3>
+
+        <!-- The code snippet (Responsive Image Carousel) below has been sourced from https://codepen.io/noirsociety/pen/ZEwLGXB -->
+        <div
+          class="slider"
+          aria-label="Image slider showcasing sports in Brazil"
+        >
+          <ul class="image_list">
+            <li class="item">
+              <div
+                class="item-image"
+                style="background-image: url(./imgs/sports.html/sports2.jpg)"
+                aria-label="Sports Etiquette in Brazil"
+                role="img"
+              ></div>
+              <div class="content desktop-only">
+                <h2 class="title">SPORTS ETIQUETTE</h2>
+                <p class="description">
+                  Sports play a significant role in Brazilian culture, and
+                  etiquette around them reflects the country's passion and
+                  enthusiasm. When attending a sporting event, it's common to
+                  wear the colors of your favorite team, often accompanied by
+                  flags and face paint to show support. Brazilians are known for
+                  their lively cheers and chants, creating an electrifying
+                  atmosphere in the stadium.
+                </p>
+              </div>
+              <div class="content mobile-only">
+                <h2 class="title">SPORTS ETIQUETTE</h2>
+                <p class="description">
+                  Sports play a significant role in Brazilian culture, and
+                  etiquette around them reflects the country's passion and
+                  enthusiasm. When attending a sporting event, it's common to
+                  wear the colors of your favorite team, often accompanied by
+                  flags and face paint to show support. Brazilians are known for
+                  their lively cheers and chants, creating an electrifying
+                  atmosphere in the stadium.
+                </p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div
+                class="item-image"
+                style="background-image: url(./imgs/sports.html/sports1.jpg)"
+                aria-label="Overview of sports in Brazil"
+                role="img"
+              ></div>
+              <div class="content desktop-only">
+                <h2 class="title">ABOUT SPORTS</h2>
+                <p class="description">
+                  Brazil is not just about football, although it's the country's
+                  biggest passion. Sports are an integral part of Brazilian
+                  life, with volleyball, martial arts like Capoeira, and even
+                  surfing being popular. Sports events bring communities
+                  together, fostering a strong sense of national pride and
+                  camaraderie.
+                </p>
+              </div>
+              <div class="content mobile-only">
+                <h2 class="title">ABOUT SPORTS</h2>
+                <p class="description">
+                  Brazil is not just about football, although it's the country's
+                  biggest passion. Sports are an integral part of Brazilian
+                  life, with volleyball, martial arts like Capoeira, and even
+                  surfing being popular. Sports events bring communities
+                  together, fostering a strong sense of national pride and
+                  camaraderie.
+                </p>
+              </div>
+            </li>
+
+            <li class="item">
+              <div
+                class="item-image"
+                style="background-image: url(./imgs/sports.html/sports3.jpg)"
+                aria-label="Cultural significance of sports in Brazil"
+                role="img"
+              ></div>
+              <div class="content desktop-only">
+                <h2 class="title">IMPORTANCE OF SPORTS</h2>
+                <p class="description">
+                  Sports hold significant cultural importance in Brazil, acting
+                  as a unifying force across diverse communities. From
+                  neighborhood games to international championships, sports help
+                  create bonds and break barriers. Football, in particular, is
+                  seen as a way to inspire young people and promote national
+                  identity.
+                </p>
+              </div>
+              <div class="content mobile-only">
+                <h2 class="title">IMPORTANCE OF SPORTS</h2>
+                <p class="description">
+                  Sports hold significant cultural importance in Brazil, acting
+                  as a unifying force across diverse communities. From
+                  neighborhood games to international championships, sports help
+                  create bonds and break barriers. Football, in particular, is
+                  seen as a way to inspire young people and promote national
+                  identity.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="dots" aria-label="Slider navigation">
+            <span class="dot" aria-label="Go to slide 1" tabindex="0"></span>
+            <span class="dot" aria-label="Go to slide 2" tabindex="0"></span>
+            <span
+              class="dot"
+              aria-label="Go to slide 3"
+              aria-hidden="true"
+              tabindex="0"
+            ></span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <p>
+            <a href="./index.html" aria-label="Navigate to Home page">Home</a>
+          </p>
+          <p>
+            <a href="./references.html" aria-label="View code acknowledgements"
+              >References</a
+            >
+          </p>
+          <p>
+            <a
+              href="./privacypolicy.html"
+              aria-label="View the privacy policy of Sports in Brazil"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+        <p>&copy; 2024 Anya. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

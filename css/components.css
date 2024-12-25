@@ -1,0 +1,545 @@
+/* I utilized ChatGPT to help debug styling errors in CSS elements all while strictly 
+adhering to academic integrity guidelines and ensuring a thorough understanding of the code. */
+
+/* reference.html and privacypolicy.html styling */
+.reference_p {
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 800px;
+  text-align: left;
+  font-family: "Roboto Flex", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--accent);
+}
+
+.reference_p h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.reference_p p {
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* Card Styling (index.html) */
+/* The code snippet (Cards) below has been sourced from
+https://www.w3schools.com/howto/howto_css_cards.asp
+The code snippet appears in an adapted form */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual card styles */
+.card {
+  background: var(--white);
+  flex: 1 1 calc(33.33% - 20px); /*flex-grow: 1, flex-shrink: 1, flex-basis: calc(33.33% - 20px) */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid var(--secondary);
+  max-width: 400px;
+}
+
+/* Card image styles */
+.card img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card heading styles */
+.card h3 {
+  margin: 10px 0;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+/* Card paragraph styles */
+.card p {
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+/* Card link styles */
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Fixed text (help.html/pub.html) styling */
+.fixed_text {
+  max-width: 600px;
+  font-family: "Roboto Flex", "Arial", sans-serif;
+  padding: 30px;
+  color: var(--text);
+  background-color: var(--secondary);
+  margin-right: 2%;
+  display: block;
+  height: 400px;
+  border-radius: 5px;
+}
+
+.fixed_text h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 200%;
+  color: var(--primary);
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.fixed_text p {
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Responsive Image Carousel (about.html) */
+/* The code snippet (Responsive Image Carousel) below has been sourced from
+https://codepen.io/noirsociety/pen/ZEwLGXB
+The code snippet appears in an adapted form */
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  font-family: "Roboto Flex", "Arial", sans-serif;
+  padding: 30px;
+  color: var(--text);
+  background-color: var(--secondary);
+  border-radius: 5px;
+}
+
+.title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 200%;
+  color: var(--primary);
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.description {
+  line-height: 1.2;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image container */
+.item-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+/* Navigation Dots for Carousel */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10; /* Ensure dots are above the image */
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: var(--tertiary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: var(--accent);
+  transition: background-color 0.3s ease;
+}
+
+/* Image Tab Gallery (pubs.html) */
+/* The code snippet (Image Tab Gallery) below has been sourced from
+https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp
+The code snippet appears in an adapted form */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1500px;
+  margin: 10px 40px;
+  gap: 20px;
+}
+
+/* Image Gallery Styles */
+.image_gallery {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+/* Main image container styles */
+.main_image_container {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* Main image styles */
+.main_image {
+  height: 100%;
+  width: 100%; /* To ensure all the images are the same sizing */
+  object-fit: cover;
+  position: absolute;
+  border-radius: 5px;
+}
+
+/* Thumbnail gallery styles */
+.thumbnail_gallery {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+/* Individual thumbnail styles */
+.thumbnail {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Hover effect for thumbnails */
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* PopupMessage after Button Click */
+/* I created this code snippet with help from ChatGPT. */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none; /* Hidden by default */
+}
+
+/* Popup window styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--tertiary);
+  padding: 20px;
+  z-index: 1000;
+}
+
+/* Centered content in the popup */
+.popup-content {
+  text-align: center;
+  color: var(--accent);
+}
+
+/* Close button styles */
+.close-popup {
+  float: right;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+/* Discount button styles */
+#discount-btn {
+  background-color: var(--primary);
+  padding: 10px 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#discount-btn:hover {
+  background-color: #ba434f;
+}
+
+/* Sports Player Hover Card (player.html) */
+/* I created this code snippet with help from ChatGPT. */
+.sports-banner {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Player banner styles */
+.player-banner {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  transition: transform 0.1s ease;
+  border-radius: 5px;
+}
+
+/* Gradient Overlay for Player Banner */
+.player-banner::before {
+  content: ""; /* Used for pseudo element (blank canvas) */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+/* Hover Effects for Player Banner */
+.player-banner:hover .hero-image {
+  transform: scale(1.05);
+}
+
+/* Hero image styles */
+.hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.1s ease;
+  border-radius: 5px;
+}
+
+.player-banner:hover .player-info {
+  display: block; /* player info get displayed on hover */
+}
+
+/* Player Info Style on hover */
+.player-info {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--text);
+  font-family: "Roboto Flex", Arial, sans-serif;
+  background-color: var(--primary);
+  display: none;
+  z-index: 1;
+  border-radius: 5px;
+  width: 70%;
+  padding: 20px;
+}
+
+/* connect.html Post form styling */
+/* This code snippet was created with assistance from ChatGPT and adapted from 
+the resources available at https://www.w3schools.com/css/css_form.asp. 
+The code snippet appears in an adapted form */
+.chat-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--secondary);
+}
+
+/* Form Styles */
+form h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+/* Input and textarea styles */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Button styles */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: var(--secondary);
+}
+
+/* connect.html API Get posts styling */
+.events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Adds a scrollbar to the events container. 
+This code snippet for scrollbar was written using ChatGPT */
+.events-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.events-container::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 4px;
+}
+
+.event {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--secondary);
+}
+
+.event h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: var(--primary);
+}
+
+.event p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: var(--secondary);
+}
+
+/* Contact Container Styles */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 30px;
+  margin: 40px auto;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  width: 50%;
+}
+
+/* Input styles for help and social inputs */
+.help-input,
+.social-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto Flex", Arial, sans-serif;
+}
+
+/* Submit button styles */
+.btn-submit {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+.btn-submit:hover {
+  background-color: var(--secondary);
+}
+
+/* Form heading styles */
+.form_h2 {
+  font-family: "Roboto Flex", "Arial", sans-serif;
+  color: var(--secondary);
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+/* Placeholder text styles */
+::placeholder {
+  opacity: 0.7;
+  font-family: "Roboto Flex", Arial, sans-serif;
+}
+
+/* ThankyouMessage after Form Submission for help.html */
+/* I created this code snippet with help from ChatGPT. */
+.thank-you-message {
+  font-family: "Roboto Flex", Arial, sans-serif;
+  font-size: 1.2rem;
+  color: var(--text);
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}

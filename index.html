@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Get the icon on chrome tab -->
+    <link rel="icon" type="image/png" href="./imgs/logo_48.png" />
+
+    <!-- Embed Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS stylesheets  -->
+    <link rel="stylesheet" href="./css/css_reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+
+    <!-- JS scripts  -->
+    <script type="module" src="./js/script.js" defer></script>
+    <script type="module" src="./js/generalFeature.js" defer></script>
+
+    <title>Sports In Brazil</title>
+  </head>
+
+  <body>
+    <div id="gridcontainer">
+      <nav>
+        <header>
+          <img src="./imgs/logo_48.png" alt="Logo of Sports in Brazil" />
+          <h1>
+            <a
+              href="./index.html"
+              aria-label="Go to the homepage of Sports in Brazil"
+              >Sports in Brazil</a
+            >
+          </h1>
+        </header>
+
+        <div id="flexnavbar">
+          <a href="./about.html" aria-label="Learn about sports in Brazil"
+            >About</a
+          >
+          <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+            >Pubs</a
+          >
+          <a
+            href="./player.html"
+            aria-label="View famous Brazilian sports players"
+            >Players</a
+          >
+          <a href="./connect.html" aria-label="Connect with others in Brazil"
+            >Connect</a
+          >
+          <a href="./help.html" aria-label="Access the help page">Help</a>
+
+          <div
+            class="ham_menu"
+            aria-label="Toggle navigation menu"
+            role="button"
+            tabindex="0"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="off_screen_menu" id="offScreenMenu" aria-hidden="true">
+          <ul>
+            <li class="ham_menu_a">
+              <a href="./about.html" aria-label="Learn about sports in Brazil"
+                >About</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+                >Pubs</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./player.html"
+                aria-label="View famous Brazilian sports players"
+                >Players</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./connect.html"
+                aria-label="Connect with others in Brazil"
+                >Connect</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./help.html" aria-label="Access the help page">Help</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <h3>Explore the Website!</h3>
+        <section class="card-container">
+          <article class="card">
+            <a href="about.html" aria-label="Learn about sports in Brazil">
+              <img
+                src="./imgs/brazil-sports.jpeg"
+                alt="Various sports played in Brazil"
+              />
+              <h3>About Brazil</h3>
+              <p>Discover sports and etiquette in Brazil</p>
+            </a>
+          </article>
+
+          <article class="card">
+            <a
+              href="pubs.html"
+              aria-label="Explore local pubs and sports events in Brazil"
+            >
+              <img src="./imgs/bar.jpeg" alt="A lively local pub" />
+              <h3>Local Pubs and Sports Events</h3>
+              <p>Explore exciting sports events at local pubs</p>
+            </a>
+          </article>
+
+          <article class="card">
+            <a
+              href="player.html"
+              aria-label="Learn about famous Brazilian sports players"
+            >
+              <img
+                src="./imgs/player.jpg"
+                alt="Famous Brazilian sports players"
+              />
+              <h3>Sports Players</h3>
+              <p>Meet the most famous Brazilian sports players</p>
+            </a>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <div>
+          <p>
+            <a href="./index.html" aria-label="Navigate to Home page">Home</a>
+          </p>
+          <p>
+            <a href="./references.html" aria-label="View code acknowledgements"
+              >References</a
+            >
+          </p>
+          <p>
+            <a
+              href="./privacypolicy.html"
+              aria-label="View the privacy policy of Sports in Brazil"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+        <p>&copy; 2024 Anya. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

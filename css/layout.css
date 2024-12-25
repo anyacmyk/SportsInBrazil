@@ -1,0 +1,286 @@
+/* I utilized ChatGPT to help debug styling errors in CSS elements all while strictly 
+adhering to academic integrity guidelines and ensuring a thorough understanding of the code. */
+
+header {
+  display: flex;
+}
+
+nav {
+  grid-area: nav;
+  background-color: var(--secondary);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  flex-direction: row;
+  align-items: baseline;
+  z-index: 100;
+  position: relative;
+}
+
+body {
+  font-family: "Roboto Flex", "Arial", sans-serif;
+  font-size: 100%;
+}
+
+main {
+  grid-area: main;
+  padding: 50px;
+}
+
+footer {
+  grid-area: foot;
+  background-color: var(--primary);
+  font-family: "Roboto Flex", "Arial", sans-serif;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+/* Navbar flex layout */
+#flexnavbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  height: fit-content;
+  width: fit-content;
+  margin: auto 0;
+}
+
+/* Grid container layout */
+#gridcontainer {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "foot foot foot";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Hamburger Menu */
+/* The code snippet (Hamburger Menu) below has been sourced from
+  https://www.youtube.com/watch?v=aNDqzlAKmZc
+  The code snippet appears in an adapted form */
+.off_screen_menu {
+  display: none;
+  background-color: var(--secondary);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  right: -100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5rem;
+  transition: right 0.3s ease;
+  z-index: 20;
+}
+
+/* Display off-screen menu when active */
+.off_screen_menu.active {
+  display: flex;
+  right: 0;
+}
+
+/* Hamburger Menu Styles */
+.ham_menu {
+  display: none;
+}
+
+/* Hover effect for hamburger menu */
+.ham_menu:hover span {
+  background-color: var(--tertiary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hamburger menu line styles */
+.ham_menu span {
+  height: 5px;
+  width: 100%;
+  background-color: var(--accent);
+  border-radius: 15px;
+  position: absolute;
+  z-index: 25;
+  transition: 0.3s ease;
+}
+
+/* Hamburger Menu Lines Positioning */
+.ham_menu span:nth-child(1) {
+  top: 25%;
+}
+.ham_menu span:nth-child(2) {
+  top: 50%;
+}
+.ham_menu span:nth-child(3) {
+  top: 75%;
+}
+
+/* Rotates top line to form cross */
+.ham_menu.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+/* Hides middle line */
+.ham_menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+/* Rotates bottom line to form cross */
+.ham_menu.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.ham_menu_a {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  color: var(--accent);
+}
+
+/* Hover effect for menu items */
+.ham_menu_a:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* For about.html slideshow content */
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: block;
+}
+
+/* Responsiveness in Desktop Screens */
+/* Adjust navbar alignment for screens wider than 600px */
+@media screen and (min-width: 600px) {
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  #flexnavbar {
+    justify-content: flex-end;
+  }
+
+  .slider {
+    width: 60%;
+    margin-left: 5%;
+  }
+
+  .content {
+    width: min(30vw, 600px);
+    position: absolute;
+    right: -520px;
+    top: 0;
+    height: 500px;
+  }
+
+  .item {
+    height: 500px;
+  }
+
+  .item-image {
+    height: 100%;
+  }
+}
+
+/* Responsiveness in Mobile Screens */
+/* I created this code snippet with help from ChatGPT. */
+@media (max-width: 600px) {
+  .contact-container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px;
+    align-items: stretch;
+  }
+
+  .form-container,
+  .fixed_text {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px;
+  }
+
+  .fixed_text {
+    padding: 20px;
+    height: fit-content;
+  }
+
+  .btn-submit {
+    width: 100%; /* Full-width button for mobile */
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 1rem 0;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image_gallery,
+  .google-map {
+    width: 100%;
+  }
+
+  .google-map {
+    height: auto;
+  }
+
+  .google-map iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .player-banner {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  #flexnavbar > a {
+    display: none;
+  }
+
+  .ham_menu {
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Get the icon on chrome tab -->
+    <link rel="icon" type="image/png" href="./imgs/logo_48.png" />
+
+    <!-- Embed Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="./css/css_reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+
+    <!-- JS scripts -->
+    <script type="module" src="./js/generalFeature.js" defer></script>
+    <script type="module" src="./js/script.js" defer></script>
+
+    <title>Sports In Brazil</title>
+  </head>
+
+  <body>
+    <div id="gridcontainer">
+      <nav>
+        <header>
+          <img src="./imgs/logo_48.png" alt="Logo of Sports in Brazil" />
+          <h1>
+            <a
+              href="./index.html"
+              aria-label="Go to the homepage of Sports in Brazil"
+              >Sports in Brazil</a
+            >
+          </h1>
+        </header>
+
+        <div id="flexnavbar">
+          <a href="./about.html" aria-label="Learn about sports in Brazil"
+            >About</a
+          >
+          <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+            >Pubs</a
+          >
+          <a
+            href="./player.html"
+            aria-label="View famous Brazilian sports players"
+            >Players</a
+          >
+          <a href="./connect.html" aria-label="Connect with others in Brazil"
+            >Connect</a
+          >
+          <a href="./help.html" aria-label="Access the help page">Help</a>
+
+          <div
+            class="ham_menu"
+            aria-label="Toggle navigation menu"
+            role="button"
+            tabindex="0"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="off_screen_menu" id="offScreenMenu" aria-hidden="true">
+          <ul>
+            <li class="ham_menu_a">
+              <a href="./about.html" aria-label="Learn about sports in Brazil"
+                >About</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+                >Pubs</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./player.html"
+                aria-label="View famous Brazilian sports players"
+                >Players</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./connect.html"
+                aria-label="Connect with others in Brazil"
+                >Connect</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./help.html" aria-label="Access the help page">Help</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <h3>Get to Know Brazilian Players!</h3>
+        <section class="sports-banner">
+          <div
+            class="sports-banner"
+            role="region"
+            aria-label="Famous Brazilian Sports Players"
+          >
+            <!-- Neymar Jr. -->
+            <div
+              class="player-banner"
+              id="player1"
+              role="article"
+              aria-labelledby="neymar-name"
+              aria-describedby="neymar-info"
+            >
+              <img
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnGGwJ6jVmmbR2VV3tTLwK_71S5pB0mY_CKKXH1i3bl5NfNybM"
+                alt="Neymar Jr., Brazilian soccer player in a Brazil team jersey"
+                class="hero-image"
+              />
+              <div class="player-info" id="neymar-info">
+                <h2 id="neymar-name">Neymar Jr.</h2>
+                <p>Position: Forward</p>
+                <p>Team: Brazil National Team</p>
+                <p>Age: 32</p>
+                <p>Achievements: Copa America Winner, UEFA Champions League</p>
+              </div>
+            </div>
+
+            <!-- Gabi Guimarães -->
+            <div
+              class="player-banner"
+              id="player2"
+              role="article"
+              aria-labelledby="gabi-name"
+              aria-describedby="gabi-info"
+            >
+              <img
+                src="https://cdn.ibahia.com/wp-content/uploads/2023/01/1200x720/gabi-guimaraes-1024x614-9.webp?fallback=https%3A%2F%2Fcdn.ibahia.com%2Fwp-content%2Fuploads%2F2023%2F01%2Fgabi-guimaraes-1024x614.jpg%3Fxid%3D968775&xid=968775"
+                alt="Gabi Guimarães, Brazilian volleyball player, in volleyball gear"
+                class="hero-image"
+              />
+              <div class="player-info" id="gabi-info">
+                <h2 id="gabi-name">Gabi Guimarães</h2>
+                <p>Position: Outside Hitter</p>
+                <p>Team: Brazil Women's Volleyball</p>
+                <p>Age: 26</p>
+                <p>Achievements: Olympic Gold Medalist, World Champion</p>
+              </div>
+            </div>
+
+            <!-- Falcão -->
+            <div
+              class="player-banner"
+              id="player3"
+              role="article"
+              aria-labelledby="falcao-name"
+              aria-describedby="falcao-info"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Falcao_Rio_2007.jpg/440px-Falcao_Rio_2007.jpg"
+                alt="Falcão, Brazilian futsal player, in a futsal uniform"
+                class="hero-image"
+              />
+              <div class="player-info" id="falcao-info">
+                <h2 id="falcao-name">Falcão</h2>
+                <p>Position: Forward</p>
+                <p>Team: Brazil Futsal Team</p>
+                <p>Age: 37</p>
+                <p>
+                  Achievements: FIFA Futsal World Cup Winner, Multiple-time
+                  World Player
+                </p>
+              </div>
+            </div>
+
+            <!-- Marta -->
+            <div
+              class="player-banner"
+              id="player4"
+              role="article"
+              aria-labelledby="marta-name"
+              aria-describedby="marta-info"
+            >
+              <img
+                src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcScHbWp8VkF6NH9WpAcu2gwvfTiJUDA1fa90TBj9gCiN3vmiyeuPOAhW1jEcAssDc5dVxMQKBnObBoE7Ug"
+                alt="Marta, Brazilian women's soccer player in a Brazil team jersey"
+                class="hero-image"
+              />
+              <div class="player-info" id="marta-info">
+                <h2 id="marta-name">Marta</h2>
+                <p>Position: Forward</p>
+                <p>Team: Brazil Women's National Team</p>
+                <p>Age: 38</p>
+                <p>Achievements: Six-time FIFA World Player of the Year</p>
+              </div>
+            </div>
+
+            <!-- Oscar Schmidt -->
+            <div
+              class="player-banner"
+              id="player5"
+              role="article"
+              aria-labelledby="oscar-name"
+              aria-describedby="oscar-info"
+            >
+              <img
+                src="https://d2a3o6pzho379u.cloudfront.net/7071.jpg"
+                alt="Oscar Schmidt, Brazilian basketball player"
+                class="hero-image"
+              />
+              <div class="player-info" id="oscar-info">
+                <h2 id="oscar-name">Oscar Schmidt</h2>
+                <p>Position: Small Forward</p>
+                <p>Team: Brazil National Basketball Team (retired)</p>
+                <p>Age: 65</p>
+                <p>
+                  Achievements: Basketball Hall of Fame, highest scorer in
+                  Olympic history
+                </p>
+              </div>
+            </div>
+
+            <!-- Pelé -->
+            <div
+              class="player-banner"
+              id="player6"
+              role="article"
+              aria-labelledby="pele-name"
+              aria-describedby="pele-info"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDTiNJ-uS8zXGC0rndtwLczhGd4BYwTMU2uQ&s"
+                alt="Pelé, Brazilian soccer legend in Brazil team jersey from the 1960s"
+                class="hero-image"
+              />
+              <div class="player-info" id="pele-info">
+                <h2 id="pele-name">Pelé</h2>
+                <p>Position: Forward</p>
+                <p>Team: Brazil National Team (retired)</p>
+                <p>
+                  Achievements: Three-time FIFA World Cup Winner, all-time top
+                  scorer
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div>
+          <p>
+            <a href="./index.html" aria-label="Navigate to Home page">Home</a>
+          </p>
+          <p>
+            <a href="./references.html" aria-label="View code acknowledgements"
+              >References</a
+            >
+          </p>
+          <p>
+            <a
+              href="./privacypolicy.html"
+              aria-label="View the privacy policy of Sports in Brazil"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+        <p>&copy; 2024 Anya. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

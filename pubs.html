@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Get the icon on chrome tab -->
+    <link rel="icon" type="image/png" href="./imgs/logo_48.png" />
+
+    <!-- Embed Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="./css/css_reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+
+    <!-- JS scripts -->
+    <script type="module" src="./js/script.js" defer></script>
+    <script type="module" src="./js/generalFeature.js" defer></script>
+
+    <title>Sports In Brazil</title>
+  </head>
+
+  <body>
+    <div id="gridcontainer">
+      <nav>
+        <header>
+          <img src="./imgs/logo_48.png" alt="Logo of Sports in Brazil" />
+          <h1>
+            <a
+              href="./index.html"
+              aria-label="Go to the homepage of Sports in Brazil"
+              >Sports in Brazil</a
+            >
+          </h1>
+        </header>
+
+        <div id="flexnavbar">
+          <a href="./about.html" aria-label="Learn about sports in Brazil"
+            >About</a
+          >
+          <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+            >Pubs</a
+          >
+          <a
+            href="./player.html"
+            aria-label="View famous Brazilian sports players"
+            >Players</a
+          >
+          <a href="./connect.html" aria-label="Connect with others in Brazil"
+            >Connect</a
+          >
+          <a href="./help.html" aria-label="Access the help page">Help</a>
+
+          <div
+            class="ham_menu"
+            aria-label="Toggle navigation menu"
+            role="button"
+            tabindex="0"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="off_screen_menu" id="offScreenMenu" aria-hidden="true">
+          <ul>
+            <li class="ham_menu_a">
+              <a href="./about.html" aria-label="Learn about sports in Brazil"
+                >About</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+                >Pubs</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./player.html"
+                aria-label="View famous Brazilian sports players"
+                >Players</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./connect.html"
+                aria-label="Connect with others in Brazil"
+                >Connect</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./help.html" aria-label="Access the help page">Help</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <h3>Experience Sports Events at Local Pubs!</h3>
+        <div class="content-wrapper">
+          <section class="fixed_text">
+            <h2>DISCOVER BRAZIL'S LOCAL PUBS</h2>
+            <p>
+              Discover some of the best local pubs in Brazil! Use the
+              interactive map above to explore various pub locations across the
+              country. Whether you're in Rio de Janeiro or another vibrant city,
+              find your favorite spots to enjoy the local culture and
+              atmosphere.
+            </p>
+
+            <p>
+              Most pubs are open from 4 PM to 12 AM, with extended hours on
+              weekends. Check the map for exact locations and details on opening
+              times.
+            </p>
+
+            <p>
+              Don't miss out on local flavors and unique events happening every
+              week!
+            </p>
+
+            <button id="discount-btn" class="btn-discount">
+              Get Discounted Prices
+            </button>
+
+            <!-- This gets the WIP popup have a grey overlay -->
+            <div
+              id="popup-overlay"
+              class="popup-overlay"
+              style="display: none"
+            ></div>
+
+            <div id="popup-membership" class="popup" style="display: none">
+              <div class="popup-content">
+                <span class="close-popup" id="close-popup">&times;</span>
+                <h3>Work in Progress</h3>
+                <p>
+                  Our website is currently under construction. Membership
+                  options and exclusive discounts will be available soon. Please
+                  check back later for more details and access to special
+                  offers!
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- The code snippet (Image Tab Gallery) below has been sourced from
+          https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp
+          The code snippet appears in an adapted form -->
+          <div class="image_gallery">
+            <div class="main_image_container">
+              <img
+                id="mainImage"
+                src="./imgs/pub.html/event1.jpg"
+                alt="Main event poster showcasing sports event details"
+                class="main_image"
+                aria-label="Main event poster"
+              />
+            </div>
+
+            <div class="thumbnail_gallery">
+              <img
+                src="./imgs/pub.html/event2.jpg"
+                alt="Event poster for a local sports tournament"
+                class="thumbnail"
+                aria-label="Event poster for sports tournament"
+              />
+
+              <img
+                src="./imgs/pub.html/event3.jpg"
+                alt="Event poster promoting a live sports screening"
+                class="thumbnail"
+                aria-label="Event poster for live sports screening"
+              />
+
+              <img
+                src="./imgs/pub.html/event4.jpg"
+                alt="Event poster for a Brazilian football match"
+                class="thumbnail"
+                aria-label="Event poster for Brazilian football match"
+              />
+
+              <img
+                src="./imgs/pub.html/event5.jpg"
+                alt="Event poster for a pub sports quiz night"
+                class="thumbnail"
+                aria-label="Event poster for pub sports quiz night"
+              />
+
+              <img
+                src="./imgs/pub.html/event6.jpg"
+                alt="Event poster announcing a local sports festival"
+                class="thumbnail"
+                aria-label="Event poster for local sports festival"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="content-wrapper">
+          <!-- The code snippet (Cards) below has been sourced from
+          https://blog.hubspot.com/website/how-to-embed-google-map-in-html
+          The code snippet appears in it's original form. -->
+          <div class="google-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235230.09675952164!2d-43.54830614311774!3d-22.896019342921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20State%20of%20Rio%20de%20Janeiro%2C%20Brazil!5e0!3m2!1sen!2sau!4v1729336150173!5m2!1sen!2sau"
+              width="1200"
+              height="650"
+              style="border: 0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <p>
+            <a href="./index.html" aria-label="Navigate to Home page">Home</a>
+          </p>
+          <p>
+            <a href="./references.html" aria-label="View code acknowledgements"
+              >References</a
+            >
+          </p>
+          <p>
+            <a
+              href="./privacypolicy.html"
+              aria-label="View the privacy policy of Sports in Brazil"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+        <p>&copy; 2024 Anya. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

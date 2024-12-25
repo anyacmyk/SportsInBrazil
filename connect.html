@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Get the icon on chrome tab -->
+    <link rel="icon" type="image/png" href="./imgs/logo_48.png" />
+
+    <!-- Embed Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS stylesheets  -->
+    <link rel="stylesheet" href="./css/css_reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+
+    <!-- JS scripts  -->
+    <script type="module" src="./js/generalFeature.js" defer></script>
+    <script type="module" src="./js/components.js" defer></script>
+    <script type="module" src="./js/form.js" defer></script>
+
+    <title>Sports In Brazil</title>
+  </head>
+
+  <body>
+    <div id="gridcontainer">
+      <nav>
+        <header>
+          <img src="./imgs/logo_48.png" alt="Logo of Sports in Brazil" />
+          <h1>
+            <a
+              href="./index.html"
+              aria-label="Go to the homepage of Sports in Brazil"
+              >Sports in Brazil</a
+            >
+          </h1>
+        </header>
+
+        <div id="flexnavbar" role="navigation" aria-label="Main navigation">
+          <a href="./about.html" aria-label="Learn about sports in Brazil"
+            >About</a
+          >
+          <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+            >Pubs</a
+          >
+          <a
+            href="./player.html"
+            aria-label="View famous Brazilian sports players"
+            >Players</a
+          >
+          <a href="./connect.html" aria-label="Connect with others in Brazil"
+            >Connect</a
+          >
+          <a href="./help.html" aria-label="Access the help page">Help</a>
+
+          <div
+            class="ham_menu"
+            aria-label="Toggle navigation menu"
+            role="button"
+            tabindex="0"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="off_screen_menu" id="offScreenMenu" aria-hidden="true" role="menu">
+          <ul>
+            <li class="ham_menu_a">
+              <a href="./about.html" aria-label="Learn about sports in Brazil"
+                >About</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./pubs.html" aria-label="Explore local pubs in Brazil"
+                >Pubs</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./player.html"
+                aria-label="View famous Brazilian sports players"
+                >Players</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a
+                href="./connect.html"
+                aria-label="Connect with others in Brazil"
+                >Connect</a
+              >
+            </li>
+            <li class="ham_menu_a">
+              <a href="./help.html" aria-label="Access the help page">Help</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <h3>Connect with Fellow Solo Travelers!</h3>
+
+        <div class="chat-container">
+          <form id="chatPostForm" aria-labelledby="chatPostForm">
+            <h2 class="form_h2">Share Your Social Media</h2>
+            <label for="person_name">First Name:</label>
+            <input
+              type="text"
+              class="social-input"
+              id="person_name"
+              name="person_name"
+              required
+              placeholder="Enter your first name"
+              maxlength="255"
+              aria-required="true"
+              aria-label="Enter your first name"
+            />
+
+            <label for="chat_post_title">Last Name:</label>
+            <input
+              type="text"
+              class="social-input"
+              id="chat_post_title"
+              name="chat_post_title"
+              required
+              placeholder="Enter your last name"
+              maxlength="255"
+              aria-required="true"
+              aria-label="Enter your last name"
+            />
+
+            <label for="chat_post_content">Social Media Handle:</label>
+            <input
+              type="text"
+              class="social-input"
+              id="chat_post_content"
+              name="chat_post_content"
+              required
+              placeholder="Enter your social media handle. Add an '@'"
+              aria-required="true"
+              aria-label="Enter your social media handle with an '@'"
+            />
+
+            <button type="submit" aria-label="Submit the form">Submit</button>
+          </form>
+
+          <div id="submitResponse" style="margin-top: 20px" role="alert"></div>
+
+          <div
+            id="eventsContainer"
+            class="events-container"
+            style="margin-top: 20px"
+            aria-live="polite"
+          ></div>
+          <div id="errorMessage" style="margin-top: 20px" role="alert"></div>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          <p>
+            <a href="./index.html" aria-label="Navigate to Home page">Home</a>
+          </p>
+          <p>
+            <a href="./references.html" aria-label="View code acknowledgements"
+              >References</a
+            >
+          </p>
+          <p>
+            <a
+              href="./privacypolicy.html"
+              aria-label="View the privacy policy of Sports in Brazil"
+              >Privacy Policy</a
+            >
+          </p>
+        </div>
+        <p>&copy; 2024 Anya. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
