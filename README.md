@@ -7,7 +7,6 @@ Sport Categories: The website features various sports popular in Brazil, such as
 Athlete Profiles: Highlighting famous Brazilian athletes and their contributions to their respective sports.
 Upcoming Events: A section dedicated to the latest sports events happening in Brazil.
 Cultural Insights: Understanding the significance of sports in Brazilian culture and society.
-
 Technologies Used
 HTML: Structuring the content and layout.
 CSS: Styling the website and ensuring a responsive design.
@@ -17,4 +16,3 @@ Contributions to this project are not allowed at the moment. All rights are rese
 
 Copyright
 © 2024 Anya Goel. All rights reserved.
-
